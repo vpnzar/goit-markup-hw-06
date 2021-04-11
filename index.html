@@ -553,6 +553,41 @@
     <!-- Modal window -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
+        <form class="modal-form">
+          <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+          <div class="form-field">
+            <label for="name">Имя</label>
+            <input type="text" name="name" id="name" />
+          </div>
+          <div class="form-field">
+            <label for="tel">Телефон</label>
+            <input type="tel" name="tel" id="tel" />
+          </div>
+          <div class="form-field">
+            <label for="email">Почта</label>
+            <input type="email" name="mail" id="email" placeholder="1" />
+          </div>
+
+          <div class="form-field">
+            <label for="comment">Комментарий</label>
+            <textarea
+              class="comment"
+              name="comment"
+              id="comment"
+              cols="30"
+              rows="10"
+              placeholder="Введите текст"
+            ></textarea>
+          </div>
+          <div class="form-field checkbox">
+            <input type="checkbox" name="" id="policy" />
+            <label for="policy" class="checkbox-label"
+              >Соглашаюсь с рассылкой и принимаю
+              <a class="policy-link" href="">Условия договора</a></label
+            >
+          </div>
+          <button class="modal-submit" type="submit">Отправить</button>
+        </form>
         <button class="modal-button" aria-label="Закрыть" data-modal-close>
           <svg class="modal-icon" width="30" height="30">
             <use href="./images/modal-sprite.svg#icon-close"></use>
