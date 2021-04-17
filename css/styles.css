@@ -55,6 +55,7 @@ img {
   --footer-icon-bgrn-color: #ffffff1a;
   --item-border-color: #eeeeee;
   --header-line-color: #ececec;
+  --input-text-color: #ffffff99;
   --font-family: Roboto;
   --accent-font: Raleway;
 }
@@ -237,7 +238,6 @@ p {
 
 /* Hero-Button */
 .hero-section .button {
-  border: 0px solid transparent;
   border-radius: 4px;
   padding: 10px 32px;
   min-width: 200px;
@@ -345,6 +345,7 @@ p {
 
 .modal {
   position: absolute;
+  padding: 40px;
   top: 50%;
   left: 50%;
   width: 528px;
@@ -379,7 +380,6 @@ p {
 
 .modal-form {
   display: block;
-  padding: 40px;
 }
 
 .form-field {
@@ -387,6 +387,12 @@ p {
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: var(--paragraph-text-color);
 }
 
 .form-field:nth-child(n + 5) {
@@ -398,13 +404,7 @@ p {
 
 .modal-label {
   margin-bottom: 4px;
-  font-family: var(--font-family)
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
-  color: var(--paragraph-text-color);
+  font-family: var(--font-family);
 }
 
 .form-field .modal-input {
@@ -422,7 +422,6 @@ p {
 .form-field .modal-input:focus {
   border: 1px solid var(--accent-color);
 }
-
 
 .form-field .modal-input:not(:last-child) {
   padding: 11px 12px 11px 42px;
@@ -487,6 +486,7 @@ p {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  cursor: pointer;
 }
 .checkbox-link {
   text-decoration-line: underline;
@@ -530,6 +530,7 @@ p {
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border: none;
   transition-property: background, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -834,7 +835,12 @@ p {
 }
 
 .portfolio-button .button {
+  border: none;
   padding: 6px 22px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
 }
 
 .btn-item:not(:last-child) {
@@ -929,12 +935,12 @@ p {
 .footer-contact {
   display: block;
   width: 231px;
-  margin-right: 70px;
 }
 
 .footer .container {
   display: flex;
   align-items: baseline;
+  justify-content: space-between;
 }
 
 address > p {
@@ -975,7 +981,6 @@ address .contact-link {
 
 .footer-join {
   display: block;
-  margin-right: 93px;
 }
 
 .join-title {
@@ -1054,13 +1059,14 @@ address .contact-link {
 }
 
 .sub-field input {
-  padding: 15px 295px 15px 16px;
+  padding: 15px 16px;
   width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px #00000026);
   border-radius: 4px;
   background-color: inherit;
+  color: var(--input-text-color);
 }
 
 .sub-field input::placeholder {
@@ -1068,7 +1074,7 @@ address .contact-link {
   line-height: 1.25;
   align-items: center;
   letter-spacing: 0.03em;
-  color: #ffffff99;
+  color: var(--input-text-color);
 }
 
 .sub-button {
@@ -1083,6 +1089,7 @@ address .contact-link {
   line-height: 1.88;
   letter-spacing: 0.06em;
   border-radius: 4px;
+  border: none;
   color: var(--main-background-color);
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
